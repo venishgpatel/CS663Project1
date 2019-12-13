@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
+    line-height: 2;
+}
+
+body {
+    max-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2962ff;
+}
+
+span {
+    font-weight: bolder;
+    color: #000000;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+}
+
+.navigation li {
+    flex: 1;
+    text-align: center;
+    padding: 1% 0;
+}
+
+.navigation li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+li > a:hover {
+    color: #bbbbbb;
+}
+
+li > a:active {
+    font-size: 1rem;
+}
+
+.next:hover, .previous:hover {
+    background-color: #bbbbbb;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.slideHeader {
+    background-color: #263238;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.slideshowContainer {
+    width: 90%;
+    margin: auto;
+    height: 80vh;
+    overflow-y: scroll;
+    transition: -webkit-transform 0.8s ease 0s;
+}
+
+.slide {
+    padding: 0.5% 0;
+    align-content: center;
+    overflow-y: scroll;
+}
+
+h3, figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+p, .bulletPoints > li {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 1%;
+    font-family: 'Montserrat', sans-serif !important;
+    width: 70%;
+    margin: auto;
+    color: #555555;
+}
+
+.bulletPoints {
+    padding-left: 2%;
+}
+.previous, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    font-size: 3rem;
+    padding: 1%;
+    margin: 0 10%;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.author {
+    color: #777777;
+    font-size: 0.7rem;
+}
